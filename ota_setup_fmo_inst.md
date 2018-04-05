@@ -74,6 +74,17 @@ Steps to generate OTA builds
 	e.g. do not fallback to stock recovery after updates
 
 	# copy ota_update.zip and disk_output/build.prop to the location as mentioned above
-# TODO:  
-Add test script to validate if build is properly placed and accessible
+
+# OTA Server Test Script:
+Unit test script is useful to query the OTA server and look out the response. 
+
+    # Clone FMOOTA_utils 
+    $ git clone https://github.com/FreeMobileOS/FMOOTA_Utils.git
+
+    $ cd FMOOTA_Utils/OTAUnitTest
+
+    # run unit test
+    $ npm run test
+
+    # note : To change the server url or any other paramters refere to OTAUnitTest/test/fmo.js 
 
